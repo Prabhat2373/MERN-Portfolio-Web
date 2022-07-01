@@ -1,0 +1,104 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 3.5rem;
+    bottom: 20px;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 3px rgb(19 18 18);
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    /* top: 0; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    margin: 0px 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .icon-toggle {
+    filter: invert(1);
+  }
+  .logo {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(157, 126, 243);
+    z-index: 1;
+  }
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  nav ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+  }
+  nav ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--head-color);
+    color: #000f52;
+    position: relative;
+    /* padding: 6px; */
+  }
+  .hireSect a {
+    text-decoration: none;
+  }
+  .hireSect {
+    display: flex;
+    gap: 2rem;
+    padding: 5px;
+    margin: 4px;
+    z-index: 3;
+    position: absolute;
+    bottom: 125px;
+  }
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    background-color: #000f52;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  nav ul li.active a::after {
+    visibility: visible;
+    /* display: block; */
+    transform: scaleX(1);
+  }
+  nav ul li a:hover:after {
+    visibility: visible;
+    /* display: block; */
+    transform: scaleX(1);
+  }
