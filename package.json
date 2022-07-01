@@ -1,0 +1,40 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio website",
+  "main": "app.js",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.4",
+    "@mui/styled-engine-sc": "^5.6.1",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.13.14",
+    "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "cd client && npm install && npm run build "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prabhat2373/MERN-Portfolio.git"
+  },
+  "author": "prabhat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prabhat2373/MERN-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Prabhat2373/MERN-Portfolio#readme",
+  "engines": {
+    "node": "16.14.2"
+  }
+}
