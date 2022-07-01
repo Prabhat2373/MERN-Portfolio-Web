@@ -22,7 +22,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "build": "cd client && npm install && npm run build "
+    "build": "cd front && npm install && npm run build "
   },
   "repository": {
     "type": "git",
