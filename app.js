@@ -2,13 +2,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
 const webRouter = require('./routes/webRouter');
-const cors = require('cors');
 const path = require('path');
 const cors = require('cors');
 
 app.use(cors())
-app.use(express.static(path.join(__dirname, 'client/public')));
-// app.use('./React-front/public', express.static('React-front'));
+app.use(express.static(path.join(__dirname, '/client/build')));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use('/', webRouter);
