@@ -27,7 +27,7 @@ export default function Hero(props) {
             </h1>
             <div className="hireSect">
                 <button className="btn1" id="btn" onClick={props.toggleModal}>Hire Me!</button>
-                <a href="./img/Prabhat-Tambe.pdf" download target="_blank"> <button className="btn" id="btn1">Download
+                <a href="./prabhat-CV.pdf" download target="_blank"> <button className="btn" id="btn1">Download
                         CV</button></a>
             </div>
         </div>
