@@ -30,7 +30,10 @@ const userSchema = new mongoose.Schema({
   },
   number: {
     type: Number,
-    required: true,
+  },
+  password:{
+    type: String,
+    required: true
   },
   feedBack: {
     type: String,

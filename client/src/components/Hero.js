@@ -10,7 +10,7 @@ export default function Hero(props) {
                 <a href="/" className="logo">PRABHAT</a>
             </div>
             <div className="dark-light-toggle" onClick={props.toggleMode}>
-                <box-icon name="moon" className="icon-toggle" style={{"filter":"invert(1)"}} ></box-icon>
+                {/* <box-icon name="moon" className="icon-toggle" style={{"filter":"invert(1)"}} ></box-icon> */}
             </div>
         </div>
         <div className="container">

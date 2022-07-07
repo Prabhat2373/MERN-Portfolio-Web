@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectItem(props) {
   return (
     <>
-      <div className="projectBoxes" data-aos="fade-up">
+      <div className="projectBoxes" data-aos={`fade-${props.fade}`}>
         <a
           href={props.link}
           rel="noreferrer"

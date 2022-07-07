@@ -22,6 +22,7 @@ export default function Projects() {
               title="Personal Portfolio"
               description="Created a Personal Portfolio Website Using pure HTML/CSS and
                     JavaScript. Backend - Node.js,Express.js, MongoDb."
+              fade="down"
             />  
             <ProjectItem
               key="Netflix Web"
@@ -29,6 +30,7 @@ export default function Projects() {
               imgSrc="Netflix2.webp"
               title="Netflix Clone using MERN "
               description="Tried to make Full NEtflix Clone Using MERN Stack with kind of Exact same UI"
+              fade="up"
             />
             <ProjectItem
               key="Crypto Market Stats"
@@ -36,6 +38,7 @@ export default function Projects() {
               imgSrc="crypto.jpg"
               title="Crypto Market Daily Moving"
               description="Crypto Market Daily Moving and status of each crypto currency using React and Axios"
+              fade="down"
             />  
             <ProjectItem
               key="Teams Dashboard"
@@ -43,6 +46,7 @@ export default function Projects() {
               imgSrc="dashboard.jpg"
               title="User Dashboard UI"
               description="A User Dashboard which is Regard with Scheduling Date and Time"
+              fade="up"
             />
 
             <ProjectItem
@@ -53,6 +57,7 @@ export default function Projects() {
               description="Weather and Forecast Web App which Provides Us Realtime
                     weather Information and forecast. using - Bootstrap &
                     JavaScript"
+                    fade="down"
             /> 
 
             <ProjectItem
@@ -61,6 +66,7 @@ export default function Projects() {
               imgSrc="API.png"
               title="User's RESTful API"
               description="A RESTful API made by Node.js, Express.js and MongoDB with MVC backend Architecture."
+              fade="up"
             /> 
             <ProjectItem
               key="AJAX Web"
@@ -69,6 +75,7 @@ export default function Projects() {
               title="News Nation"
               description=" News App Which provides Live News,braking news etc. using
                     newsApi."
+                    fade="down"
             /> 
             <ProjectItem
               key="DrumPad Web"

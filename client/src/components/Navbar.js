@@ -8,9 +8,6 @@ export default function Navbar() {
       
         function activeMenu() {
           let len = sect.length;
-          // console.log(--len )
-      
-          // console.log(icons)
       
           while (--len && window.scrollY + 97 < sect[len].offsetTop) {}
           li.forEach((el) => el.classList.remove("active"));

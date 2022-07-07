@@ -19,7 +19,7 @@ export default function Ability() {
             <h3>- key Skills</h3>
         </div>
         <div className="SkillBoxes">
-            <div className="boxes" data-aos="fade-left">
+            <div className="boxes" data-aos="fade-down">
                 <div className="boxHead">
                     HTML
                 </div>
@@ -51,7 +51,7 @@ export default function Ability() {
                     </div>
                 </div>
             </div>
-            <div className="boxes" data-aos="fade-right">
+            <div className="boxes" data-aos="fade-down">
                 <div className="boxHead">
                     javaScript
                 </div>
@@ -124,29 +124,37 @@ export default function Ability() {
                     <h1 className="barsHead">Library and Frameworks</h1>
                     <div className="skillbar1">
                         <div className="h1img">
+                            <img src="/img/react.png" alt='React Img' className="rangeImg" />
+                            <h4>React js<span className="meter" id="react">71%</span></h4>
+                        </div>
+                        <input type="range" name="bootstrap" id="bootstrapbar" defaultValue="62" />
+                    </div>
+                    
+                    <div className="skillbar1">
+                        <div className="h1img">
                             <img src="/img/bootstrap.png" alt='bootstrap Img' className="rangeImg" />
-                            <h4>"BootStrap" <span className="meter" id="bootstrap">50%</span></h4>
+                            <h4>BootStrap <span className="meter" id="bootstrap">66%</span></h4>
                         </div>
                         <input type="range" name="bootstrap" id="bootstrapbar" defaultValue="62" />
                     </div>
                     <div className="skillbar1">
                         <div className="h1img">
                             <img src="/img/jquery.png" alt="jQuery Img" className="rangeImg" />
-                            <h4>jQuery <span className="meter" id="jquery">50%</span></h4>
+                            <h4>jQuery <span className="meter" id="jquery">60%</span></h4>
                         </div>
                         <input type="range" name="jquery" id="jquerybar" defaultValue="45" />
                     </div>
                     <div className="skillbar1">
                         <div className="h1img">
                             <img src="https://img.icons8.com/color-glass/48/000000/github.png" alt="Github Img" className="rangeImg" />
-                            <h4>Github <span className="meter" id="github">60%</span></h4>
+                            <h4>Github <span className="meter" id="github">75%</span></h4>
                         </div>
                         <input type="range" name="github" id="githubbar" defaultValue="45" />
                     </div>
                     <div className="skillbar1">
                         <div className="h1img">
                             <img src="/img/mongoose.png" alt="mongoose Img" className="rangeImg"/>
-                            <h4>Mongoose <span className="meter" id="mongoose">50%</span></h4>
+                            <h4>Mongoose <span className="meter" id="mongoose">65%</span></h4>
                         </div>
                         <input type="range" name="mongoose" id="mongoosebar" defaultValue="52" />
                     </div>
