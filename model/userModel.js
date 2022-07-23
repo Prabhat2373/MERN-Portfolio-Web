@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const bcrypt = require("bcryptjs")
 
 dotenv.config({ path: './config.env' });
 
@@ -31,15 +32,26 @@ const userSchema = new mongoose.Schema({
   number: {
     type: Number,
   },
-  password:{
+  password: {
     type: String,
-    required: true
+    required: false
   },
   feedBack: {
     type: String,
     required: false,
   },
 });
+
+userSchema.pre("save",  async function(next) {
+  // Only run this function if password is actuallly modified
+  if (!this.isModified('password')) return next();
+
+  // Hash the password with cost of 12, 12 is a CPU intensive amount 
+  this.password = await bcrypt.hash(this.password, 12)
+
+  next()
+})
+
 
 const users = mongoose.model('Users', userSchema);
 module.exports = users;
