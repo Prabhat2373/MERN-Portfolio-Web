@@ -14,6 +14,7 @@ export default function Hero(props) {
             </div>
         </div>
         <div className="container">
+           
             <h1 id="heroHead" data-aos="fade-down" data-aos-duration="1000">Hello World <span id="txt1">I'm,</span>
                 <span id="txt2">Prabhat</span>
                 <strong id="webtxt"><span id="and">And</span> I'm,</strong>

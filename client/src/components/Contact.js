@@ -1,6 +1,14 @@
 import React from 'react';
 
 export default function Contact() {
+  const text = document.getElementById('text')
+  const email = document.getElementById('email')
+  const handleSubmit = ()=>{
+    if(text === "" && email === ""){
+      alert("Name and Email Are Required ")
+    }
+  }
+
   return (
     <>
       <section id="contactSect">
@@ -21,6 +29,7 @@ export default function Contact() {
                 name="name"
                 placeholder="Name"
                 className="inptxt"
+                required
               />
               <input
                 type="email"
@@ -28,6 +37,7 @@ export default function Contact() {
                 name="email"
                 placeholder="Email"
                 className="inptxt"
+                required
               />
               <input
                 type="number"
@@ -44,7 +54,7 @@ export default function Contact() {
                 placeholder="Give Your FeedBack"
                 className="inptxt"
               ></textarea>
-              <input type="submit" value="Submit" name="submit" id="submit" />
+              <input type="submit" value="Submit" name="submit" id="submit" onClick={handleSubmit} />
             </form>
           </div>
         </div>

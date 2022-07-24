@@ -28,7 +28,14 @@ exports.submitUser = async (req, res) => {
       from: 'Dev.Prabhat',
       to: req.body.email,
       subject: `Hello! ${req.body.name}, Thanks For Reaching Me`,
-      text: 'Hello this is prabhat tambe who is testing upcoming features on you',
+      text: `Hello ${req.body.name}!
+            Thanks for reaching me out. Hope You find some interest on me.
+            if you have any Queries about me then get back to me.
+            for hiring process you can directly get me at this email.
+            
+            
+            Thanks and Regards,
+            Prabhat`,
     };
 
     // Actually sending Mail To Client
@@ -70,7 +77,14 @@ exports.hireme = async (req, res) => {
       from: 'Dev.Prabhat',
       to: req.body.email,
       subject: `Hello! ${req.body.name}, Thanks For Reaching Me`,
-      text: 'Hello this is prabhat tambe who is testing upcoming features on you',
+      text: `Hello ${req.body.name}!
+      Thanks for reaching me out. Hope You find some interest on me.
+      if you have any Queries about me then get back to me.
+      for hiring process you can directly get me at this email.
+      
+      
+      Thanks and Regards,
+      Prabhat`,
     };
 
     // Actually sending Mail To Client

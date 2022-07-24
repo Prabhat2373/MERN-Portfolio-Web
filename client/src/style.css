@@ -173,6 +173,16 @@
     /* background-color: var(--background-color); */
     background-color: var(--background-color);
   }
+  /* .hero-info-cont 
+  {
+    display: flex;
+    gap: 25%;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+  } */
   .overlay {
     position: absolute;
     top: 0;
@@ -342,11 +352,10 @@
   #sectAbout {
     height: 100%;
     display: flex;
-    /* background: url(/bg3.jpg) no-repeat center center/cover; */
     background: var(--background-color);
-    /* align-items: center; */
     border-top: 2px solid #ffffff;
     justify-content: center;
+    padding: 1%;
   }
   #headAbout {
     font-size: 40px;
