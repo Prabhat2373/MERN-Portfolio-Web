@@ -45,8 +45,6 @@ exports.submitUser = async (req, res) => {
         console.log('Mail sent Successfully!');
       }
     });
-
-
   } catch (err) {
     res.status(404).send(`<h1>bad Request :</h1>  <h2>${err.message}</h2>`);
   }
@@ -86,15 +84,32 @@ exports.hireme = async (req, res) => {
       Thanks and Regards,
       Prabhat`,
     };
+    let sendMailToPrabhat = {
+      from:'Dev.Prabhat',
+      to: "prabhattambe10@gmail.com",
+      subject: "New User On Portfolio",
+      text:`Hey Prabhat!
+      New User Name : ${req.body.name} is tries to reach you out
+      User's Email : ${req.body.email}
+      User's Message For You : ${req.body.message}
+      Contact That User on : ${req.body.number}
+
+      Thanks`
+    }
 
     // Actually sending Mail To Client
     mailTransporter.sendMail(mailDetails, (err, data) => {
       if (err) console.log(err.message);
       else {
-        console.log('Mail sent Successfully!');
+        console.log(data);
       }
     });
-
+    mailTransporter.sendMail(sendMailToPrabhat, (err, data) => {
+      if (err) console.log(err.message);
+      else {
+        console.log(data);
+      }
+    });
   } catch (err) {
     res.status(404).send(`<h1>bad Request :</h1>  <h2>${err.message}</h2>`);
   }
